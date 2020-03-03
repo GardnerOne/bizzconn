@@ -251,6 +251,6 @@ input[type="date"] {
     margin: 0;
 }
 
-input {
+input, #input-button {
     width: 100%;
 }

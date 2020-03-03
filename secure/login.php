@@ -40,8 +40,8 @@ session_start();
       </div>
 
       <div class="form-group mx-auto">
-        <input class="button" id="but" name="submit" type="submit" value="Sign in" />
-        <a class="button" href="/bizzconn/secure/register.php" value="Register">Sign up</a>
+        <input class="button mb-1" id="but" name="submit" type="submit" value="Sign in" />
+        <a id="input-button" class="button" href="/bizzconn/secure/register.php" value="Register">Sign up</a>
       </div>
     </form>
   </div>
