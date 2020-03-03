@@ -31,7 +31,7 @@ header("Location/logout.php");
             
             <br/>
            
-        <h2>You have now logged out!</h2>
+        <h4>You have now logged out!</h4>
     </div>
     </body>
 </html>

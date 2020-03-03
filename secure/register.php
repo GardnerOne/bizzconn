@@ -57,7 +57,8 @@ console.log["iwas clicked"];
        
              <div id="main">
      
-                 <h2>Register for a Business Account</h2>
+                 <h2>Sign Up for a Business Account</h2>
+                 <h4> Already have an account? <a href="login.php">Sign In!<a/></h4>
                     
                  <form id="senduser" enctype="multipart/form-data" method="POST" action="newBusinessUser.php">
                      <p>Name:</p>

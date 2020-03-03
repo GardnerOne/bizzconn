@@ -15,13 +15,13 @@ $errorflag = 0;
 $usercheckquery = "SELECT * FROM bizzconn_BUsers WHERE username='$busername'";
 $usercheckresult = mysqli_query($conn, $usercheckquery) or die(mysqli_error($conn));
 
-echo $bemail . $bpassword . $busername . $bname . $bBname . $bgender . $bDOB . $blocation;
+//echo $bemail . $bpassword . $busername . $bname . $bBname . $bgender . $bDOB . $blocation;
 
 if (empty($filename)) {
     $errorflag = 1;
 }
 if( mysqli_num_rows($usercheckresult) > 0){
-    echo "Unsuccessfull!";
+    //echo "Unsuccessfull!";
 }else{
 if ($errorflag == 1) {
     $insertbuser="INSERT INTO bizzconn_BUsers (email,  password, username, name, businessName, gender, dateOfBirth, location, displayimg) VALUES ('$bemail', '$bpassword', '$busername','$bname', '$bBname', '$bgender', '$bDOB', '$blocation', '0')";
@@ -52,12 +52,16 @@ if ($errorflag == 1) {
                 <?php
            
               if (mysqli_num_rows($usercheckresult) > 0) {
-                  echo "This user already exists! Log in? create account with different username?";   
+                  echo "This user already exists! Already registered?"
+                  . "<a href='login.php'> Sign In</a> or " 
+                      .  "Try different username? <a href='register.php'> Sign Up</a>";
               } else {
                   if ($errorflag == 1) {
-                      echo"Registration is now complete and your tutor account has now been created";
-                           "<p>However there was an issue uploading your profile picture</p>";
-                               "<p>You can now log in using your username and password</p>";
+                      echo"Registration is now complete and your account has now been created"
+                           ."<p>However there was an issue uploading your profile picture</p>"
+                            .   "<p>You can now sign in using your username and password</p>"
+                               . "<a href='login.php'> Sign In</a>";
+                               
                   } else if ($errorflag == 0) {
                       echo "Registration is now complete and your business account has now been successfully 
                             created"; 
