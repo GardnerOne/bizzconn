@@ -12,32 +12,33 @@ session_start();
         <title>BizzConn</title>
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+        <link
           rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          <!--href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous"
-        /> -->
-        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        --> 
+        
         <link rel="stylesheet" type="text/css" href="https://rawgit.com/outboxcraft/beauter/master/beauter.min.css">
         <link rel="stylesheet" type="text/css" href="https://rawgit.com/outboxcraft/beauter/master/beauter.min.js">
-      </head>
-      <body>
-        <div class="row">
-          <div class="col-md">
+        </head>
+      
+        <body>
+        
+       
             <div class="row">
               <div class="col m3"></div>
-              <div class="col m6">
+              <div class="col m3">
                 <img src="../pictures/logo.png" />
               </div>
               <div class="col m3"></div>
             </div>
-            <div class="container _cream">
+           
               <form action="login.php" method="post" enctype="multipart/form-data">
                 <legend>Login:</legend>
-    
                 <div class="row">
-                  <div class="col m6">
+                  <div class="col m3">
                     <label>Enter email</label>
                     <input
                       name="user"
@@ -49,7 +50,7 @@ session_start();
                   </div>
                 </div>
     
-                <div class="col m6">
+                <div class="col m3">
                   <label>Enter password</label>
                   <input
                     name="pass"
@@ -62,14 +63,16 @@ session_start();
     
                 <div class="col m4">
                   <input
-                    class=" _warning button"
+                    class="button"
                     id="but"
                     name="submit"
                     type="submit"
-                    value="login"
+                    value="Login"
                   />
                   <br />
-                  <a class="button _warning" href="/bizzconn/secure/register.php"
+                  <a class="button" 
+                     href="/bizzconn/secure/register.php"
+                     value="Register"
                     >Register</a
                   >
                   <br />
@@ -102,5 +105,6 @@ session_start();
         $conn->error; header("Location: login.php"); 
         echo "fail"; 
         } } ?>
+           
       </body>
     </html>

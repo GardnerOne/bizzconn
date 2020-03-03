@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
     <head>
         <title>Edit Profile</title>
         <meta charset="windows-1252">
-        <link rel="stylesheet" type="text/css" href="styles/styles.css"> 
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     </head>
@@ -33,9 +33,7 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
                     </div>
 
 
-            <ul class='nav'>
-                    
-    <div class="topnav"> </div>
+    <ul class='nav'>
     <li><a href="/bizzconn/registeredBusiness/home.php">Homepage</a></li>
     <li><a href="/bizzconn/registeredBusiness/community.php">Community</a></li>
     <li><a class="active"href="/bizzconn/registeredBusiness/editProfile.php">Edit Profile</a></li>
@@ -102,9 +100,4 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
         
                 </body>
-
-        
-        <div id ='footer'>
-            
-        </div>
 </html>

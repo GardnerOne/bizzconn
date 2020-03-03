@@ -8,7 +8,7 @@ include ("../connections/conn.php");
         <title></title>
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -52,20 +52,7 @@ console.log["iwas clicked"];
 </script>
     </head>
     
-    <body>
-        <div id ="content">
-        <div id="header">
-            <h1></h1>
-        </div>
-        
-        <ul class='nav'>
-                    
-                    
-        <?php include('../Functions/menuBar.php'); ?>
-                    
-                </ul>
-           
-        
+     <body> 
         <br/>
        
              <div id="main">
@@ -74,7 +61,7 @@ console.log["iwas clicked"];
                     
                  <form id="senduser" enctype="multipart/form-data" method="POST" action="newBusinessUser.php">
                      <p>Name:</p>
-                     <input type="text" id="name" placeholder="Name" name="Name">
+                     <input type="text" id="name" placeholder="Name" name="name">
                      <p> Email:</p>
                      <input type="text" id="email" placeholder="Email" name="email">
                      <p>Username:</p>
@@ -137,12 +124,12 @@ console.log["iwas clicked"];
                         <input name="displayimg" type="file" id="diplayimg" />
                         </br>
                         </br></br>
-                     <input type="submit" value="Register Account" id="diplayimg">
+                     <input type="submit" value="Register Account" id="submit">
                  </form>
     
         <h2>Register for an Influencer Account </h2>
 
-        <form id="sendlearner" enctype="multipart/form-data" method="POST" action="newLearner.php">
+        <form id="sendlearner" enctype="multipart/form-data" method="POST" action="newBusinessUser.php">
 
             
                <p>Name:</p>
@@ -171,14 +158,8 @@ console.log["iwas clicked"];
                         </br></br>
                      <input type="submit" value="Register Account">
                  </form>
-    
-      
-            
-            
-            
-        </form>
-        </div>
-         </div>
+
+        </div
 
         </body>
    

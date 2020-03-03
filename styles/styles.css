@@ -1,9 +1,10 @@
-/* colour: #b3e1ee */
-
 body {
   margin: 0;
-  background-color: #b3e1ee;
+  background-colour: #b3e1ee;
   color: black;
+  font-family: 'Verdana', sans-serif;
+    margin:0;
+    font-size: 16px;
 }
 
 #black {
@@ -31,12 +32,12 @@ body {
 }
 
 #header {
-  background-image: url("../img/headerbkg1.jpeg");
-  background-size: 100%;
+  background-image: url("../pictures/logo.png");
+  background-size: 25%;
   background-position: center;
   color: white;
   font-family: sans-serif;
-  padding: 60px;
+  padding: 10px;
 }
 #content {
   background-color: #cccccc;
@@ -51,7 +52,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: darkorange;
+  background-position: center;
   width: 100%;
   top: 0;
 }
@@ -154,16 +155,13 @@ ul.nav .active {
     margin: 0 auto;
     font-size: 20px;
   }
-  ul.nav li {
-    width: 90%;
-    background: darkorange;
-  }
+ 
 
   ul.nav,
   .active ul {
     position: relative;
     padding: 0;
-    background: darkorange;
+    background: black;
     border: 1px solid;
     width: 100%;
     border-radius: 4px 0 4px 4px;
@@ -195,7 +193,7 @@ th {
 
 input[type="submit"] {
   margin: 10px;
-  background-color: #f9e81e;
+  background-color: #F97736;
   border: 1px solid #c7b90c;
   padding: 5px;
   border-radius: 5px;
@@ -206,4 +204,48 @@ input[type="submit"] {
 html,
 body {
   background: #b3e1ee;
+  border: black;
+  
 }
+input[type="submit"] {
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #9A9A9A;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="password"] {
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #9A9A9A;
+  padding: 5px;
+  border-radius: 5px;
+}
+a[type="submit"] {
+  margin: 10px;
+  background-color: #F97736;
+  border: 1px solid #9A9A9A;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container-md{
+    colour: white
+}
+input[type="text"] {
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #9A9A9A;
+  padding: 5px;
+  border-radius: 5px;
+    
+}
+input[type="date"] {
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #9A9A9A;
+  padding: 5px;
+  border-radius: 5px;
+}
+

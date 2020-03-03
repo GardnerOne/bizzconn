@@ -14,8 +14,9 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
 <html>
     <head>
-
-
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 <body>
   
         
@@ -34,6 +35,20 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
                     <div class ="col m3"></div>
                     </div> 
 
+                
+    <ul class='nav'>
+    <div class="ulnav">
+    <li><a href="/bizzconn/registeredBusiness/home.php">Homepage</a></li>
+    <li><a class="active" href="/bizzconn/registeredBusiness/community.php">Community</a></li>
+    <li><a href="/bizzconn/registeredBusiness/editProfile.php">Edit Profile</a></li>
+    <li><a href="/bizzconn/secure/logout.php">Log out</a></li>    
+   
+    </ul>
+                
+                
+         
+                
+                
 <form action="addDiscussion.php" method="post" enctype="multipart/form-data">
                
     <legend>Add Discussion:</legend>
@@ -51,5 +66,7 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
           <label>Enter Discussion Category</label>
       <input name="discussionCategory" type="text" placeholder="Discussion Category" required="required" value="">
     </div>
+     <input type="submit" value="Submit Discussion" id="button">
+                
     
 </form>

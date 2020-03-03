@@ -1,4 +1,5 @@
 <?php
+
 include("../connections/conn.php");
 $bemail=mysqli_real_escape_string($conn, $_POST["email"]);
 $bpassword=mysqli_real_escape_string($conn, $_POST["password"]);
@@ -43,24 +44,24 @@ if ($errorflag == 1) {
     </head>
     <body>
                 <div id ="content">
-            <div id="header">
-                <h1>//</h1>
-            </div>
+          
 
               <ul class='nav'>
                 
                 </ul>
                 <?php
+           
               if (mysqli_num_rows($usercheckresult) > 0) {
-                  echo "This user already exists! Log in? create account with different username?";
+                  echo "This user already exists! Log in? create account with different username?";   
               } else {
                   if ($errorflag == 1) {
                       echo"Registration is now complete and your tutor account has now been created";
                            "<p>However there was an issue uploading your profile picture</p>";
                                "<p>You can now log in using your username and password</p>";
                   } else if ($errorflag == 0) {
-                      echo "Registration is now complete and your tutor account has now been successfully 
-                            created";
+                      echo "Registration is now complete and your business account has now been successfully 
+                            created"; 
+                      echo '<a href="/bizzconn/secure/login.php">Login';
                       "<p>Your profile picture has uploaded successfully!</p>";
                   } else {
                       echo "Registration failed";
