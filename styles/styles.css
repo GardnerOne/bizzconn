@@ -86,9 +86,7 @@ ul.nav .active {
     background-color: #cccccc;
 }
 #main {
-    text-align: center;
     width: 90%;
-    background-color: red;
     margin: 0 auto 0 auto;
     padding: 10px;
     font-family: sans-serif;
@@ -251,4 +249,8 @@ input[type="date"] {
 
 .form-group {
     margin: 0;
+}
+
+input {
+    width: 100%;
 }
