@@ -47,18 +47,20 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
         $discussionCategory = ($_POST["discussionCategory"]);
         
         echo "Your discussion has now been added! Title: $discussionTitle, Category:$discussionCategory, Content:$discussionContent";
-       
+        
+   
+
         
         $discussionquery = "INSERT INTO bizzconn_Community (discussionTitle , discussionContent, discussionCategory)
             VALUES ('$discussionTitle', '$discussionContent', '$discussionCategory')"; 
        
                 
         $resultdiscussion = mysqli_query($conn, $discussionquery) or die(mysqli_error($conn));
-       
       
-      
-        
         
         ?>
+   
+
+
     </body>
 </html>
