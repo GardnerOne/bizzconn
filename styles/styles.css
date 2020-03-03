@@ -1,251 +1,254 @@
 body {
-  margin: 0;
-  background-colour: #b3e1ee;
-  color: black;
-  font-family: 'Verdana', sans-serif;
-    margin:0;
+    margin: 0;
+    background-color: #b3e1ee;
+    color: black;
+    font-family: "Verdana", sans-serif;
+    margin: 0;
     font-size: 16px;
 }
 
 #black {
-  color: black;
+    color: black;
 }
 .button span {
-  display: inline-table;
-  width: 80%;
-  padding: 20px 30px;
-  background-color: #ffffcc;
-  margin: 20px;
+    display: inline-table;
+    width: 80%;
+    padding: 20px 30px;
+    background-color: #ffffcc;
+    margin: 20px;
 }
 
 .box {
-  min-width: 100px;
-  min-height: 250px;
-  background-color: rgb(255, 255, 255);
-  margin: 20px;
-  display: inline-block;
-  text-align: left;
-  max-width: 250px;
-  display: inline-block;
-  overflow: hidden;
-  padding: 10px;
+    min-width: 100px;
+    min-height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+    max-width: 250px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
 }
 
 #header {
-  background-image: url("../pictures/logo.png");
-  background-size: 25%;
-  background-position: center;
-  color: white;
-  font-family: sans-serif;
-  padding: 10px;
+    background-image: url("../pictures/logo.png");
+    background-size: 25%;
+    background-position: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
 }
 #content {
-  background-color: #cccccc;
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  width: 90%;
+    background-color: #cccccc;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 90%;
 }
 
 ul.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-position: center;
-  width: 100%;
-  top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-position: center;
+    width: 100%;
+    top: 0;
 }
 
 ul.nav li a {
-  display: block;
-  color: #cccccc;
-  text-align: center;
-  padding: 20px 40px;
-  text-decoration: none;
+    display: block;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
 }
 ul.nav li.right {
-  float: right;
+    float: right;
 }
 ul.nav li {
-  float: left;
+    float: left;
 }
 
 ul.nav li a {
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 20px 40px;
-  text-decoration: none;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
 }
 
 ul.nav li a:hover {
-  background-color: #cccccc;
+    background-color: #cccccc;
 }
 ul.nav .active {
-  background-color: #cccccc;
+    background-color: #cccccc;
 }
 #main {
-  text-align: center;
-  width: 90%;
-  background-color: darkorange;
-  margin: 0 auto 0 auto;
-  padding: 10px;
-  font-family: sans-serif;
+    text-align: center;
+    width: 90%;
+    background-color: red;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    font-family: sans-serif;
 }
 
 #footer {
-  text-align: center;
-  margin: auto;
-  margin-top: 10px;
-  padding-top: 10px;
-  width: 95%;
-  min-height: 50px;
-  background-color: darkorange;
-  color: #000000;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 95%;
+    min-height: 50px;
+    background-color: darkorange;
+    color: #000000;
 }
 @media only screen and (max-width: 700px) {
-  header {
-    position: absolute;
-  }
-  #box {
-    padding: 10px;
-  }
-  ul.nav {
-    display: inline-block;
-    width: 90%;
-  }
-  #top {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 20px;
-  }
-  .cal {
-    margin: 0 auto;
-    padding-left: 15%;
-    padding-bottom: 20px;
-  }
-  #main {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 20px;
-  }
-  #form {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 20px;
-  }
-  textarea {
-    font-size: 20px;
-    font-family: "Verdana", sans-serif;
-  }
-  input {
-    font-size: 20px;
-  }
+    header {
+        position: absolute;
+    }
+    #box {
+        padding: 10px;
+    }
+    ul.nav {
+        display: inline-block;
+        width: 90%;
+    }
+    #top {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .cal {
+        margin: 0 auto;
+        padding-left: 15%;
+        padding-bottom: 20px;
+    }
+    #main {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    #form {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    textarea {
+        font-size: 20px;
+        font-family: "Verdana", sans-serif;
+    }
+    input {
+        font-size: 20px;
+    }
 
-  #content {
-    width: 90%;
-    font-size: 20px;
-  }
-  select {
-    font-size: 20px;
-  }
-  #footer {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 20px;
-  }
- 
+    #content {
+        width: 90%;
+        font-size: 20px;
+    }
+    select {
+        font-size: 20px;
+    }
+    #footer {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
 
-  ul.nav,
-  .active ul {
-    position: relative;
-    padding: 0;
-    background: black;
-    border: 1px solid;
-    width: 100%;
-    border-radius: 4px 0 4px 4px;
-  }
+    ul.nav,
+    .active ul {
+        position: relative;
+        padding: 0;
+        background: black;
+        border: 1px solid;
+        width: 100%;
+        border-radius: 4px 0 4px 4px;
+    }
 
-  ul.nav li {
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-  }
+    ul.nav li {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
 
-  ul.nav:hover ul {
-    display: block;
-  }
+    ul.nav:hover ul {
+        display: block;
+    }
 }
 
 table {
-  width: 100%;
-  border: 1px solid black;
+    width: 100%;
+    border: 1px solid black;
 }
 
 tr,
 td,
 th {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 input[type="submit"] {
-  margin: 10px;
-  background-color: #F97736;
-  border: 1px solid #c7b90c;
-  padding: 5px;
-  border-radius: 5px;
+    margin: 10px;
+    background-color: #f97736;
+    border: 1px solid #c7b90c;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* New styles */
-*,
-html,
-body {
-  background: #b3e1ee;
-  border: black;
-  
-}
+
 input[type="submit"] {
-  margin: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #9A9A9A;
-  padding: 5px;
-  border-radius: 5px;
+    margin: 0px;
+    background-color: #f97736;
+    border: 1px solid #f97736;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
 input[type="password"] {
-  margin: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #9A9A9A;
-  padding: 5px;
-  border-radius: 5px;
+    /* margin: 10px; */
+    background-color: #ffffff;
+    border: 1px solid #9a9a9a;
+    padding: 5px;
+    border-radius: 5px;
 }
 a[type="submit"] {
-  margin: 10px;
-  background-color: #F97736;
-  border: 1px solid #9A9A9A;
-  padding: 5px;
-  border-radius: 5px;
+    /* margin: 10px; */
+    background-color: #f97736;
+    border: 1px solid #9a9a9a;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.container-md{
-    colour: white
-}
 input[type="text"] {
-  margin: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #9A9A9A;
-  padding: 5px;
-  border-radius: 5px;
-    
+    /* margin: 10px; */
+    background-color: #ffffff;
+    border: 1px solid #9a9a9a;
+    padding: 5px;
+    border-radius: 5px;
 }
 input[type="date"] {
-  margin: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #9A9A9A;
-  padding: 5px;
-  border-radius: 5px;
+    /* margin: 10px; */
+    background-color: #ffffff;
+    border: 1px solid #9a9a9a;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+#form-div {
+    background-color: white;
+}
+
+#form {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-group {
+    margin: 0;
+}
